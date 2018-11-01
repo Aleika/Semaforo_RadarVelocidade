@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0\projeto2\simulation\qsim
+vSemaforo
+Z1 I8eHEfN4AgZTX`1Fblli:73
+Z2 VQ4cjaiY8GbB<1gXccD=X`1
+Z3 dC:\altera\13.0\projeto2\simulation\qsim
+Z4 w1541037048
+Z5 8Semaforo.vo
+Z6 FSemaforo.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Semaforo.vo|
+Z9 o-work work -O0
+Z10 n@semaforo
+!i10b 1
+Z11 !s100 EJ:I2<j9`D6KmnT36LARl3
+!s85 0
+Z12 !s108 1541037055.712000
+Z13 !s107 Semaforo.vo|
+!s101 -O0
+vSemaforo_vlg_check_tst
+!i10b 1
+Z14 !s100 13DRn5Y[fFbIWRT^BdJR`1
+Z15 IgMhP3_dogM10<f:SKci4S0
+Z16 V7mCU<YI^UZ5Y7mi9=EllM2
+R3
+Z17 w1541037046
+Z18 8Semaforo.vt
+Z19 FSemaforo.vt
+L0 67
+R7
+r1
+!s85 0
+31
+Z20 !s108 1541037056.503000
+Z21 !s107 Semaforo.vt|
+Z22 !s90 -work|work|Semaforo.vt|
+!s101 -O0
+R9
+Z23 n@semaforo_vlg_check_tst
+vSemaforo_vlg_sample_tst
+!i10b 1
+Z24 !s100 AB8Nl7=8<YnSX0Dijdjkh2
+Z25 IgEHnX_J<l1OTgS:N6S;2@0
+Z26 VXJB]dcnXI;hTYojUO`m5o1
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@semaforo_vlg_sample_tst
+vSemaforo_vlg_vec_tst
+!i10b 1
+!s100 FD=2>Sa^ARZRiP1:AMclZ0
+IB;PGJN[;Gn1HC?D5h191Z0
+Z28 VX37YBACLiC81kk2D3OK0e3
+R3
+R17
+R18
+R19
+Z29 L0 321
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z30 n@semaforo_vlg_vec_tst
+vsensor
+Z31 I2>JmT__JBmzGEWV2^5an?3
+Z32 V^oELDYYhY7U24WBOHg9Fb0
+R3
+Z33 w1541036293
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z34 !s100 HV9g=JGo9eQ[ABVS]Rned3
+Z35 !s108 1541036296.219000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vsensor_vlg_check_tst
+Z36 !s100 a`>4B;o>VnD3F=OA@ZFYY2
+Z37 IDe<D`Q9N;T]7RAOBkU4@M1
+Z38 VM>FE@lGW>D?MjgWzo9O]F2
+R3
+Z39 w1541036292
+R18
+R19
+L0 61
+R7
+r1
+31
+Z40 !s108 1541036296.515000
+Z41 !s107 Semaforo.vt|
+R22
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vsensor_vlg_sample_tst
+Z42 !s100 0cSPF[R1hH2WVe<[SoN>_0
+Z43 IGW6j><UDSLim=9c9Vkz653
+Z44 V4laPk@fihfz2=;7>BWS7Y1
+R3
+R39
+R18
+R19
+L0 29
+R7
+r1
+31
+R40
+R41
+R22
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vsensor_vlg_vec_tst
+Z45 !s100 Q75R^:Wn3do^B5=BWXObc2
+Z46 IP1keeS<0a?@hUdEiWTL`N1
+Z47 VN;aoWKB^GMeR]1DI4Nh:]3
+R3
+R39
+R18
+R19
+Z48 L0 156
+R7
+r1
+31
+R40
+R41
+R22
+R9
+!i10b 1
+!s85 0
+!s101 -O0
