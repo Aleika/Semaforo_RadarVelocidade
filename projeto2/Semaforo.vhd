@@ -8,7 +8,7 @@ port(
 	r : buffer std_logic_vector (1 downto 0); 
 	g : buffer std_logic_vector (1 downto 0);
 	y : buffer std_logic_vector (1 downto 0);
-	A, B, C: in std_logic;
+	i1, i2: in std_logic;
 	sensor1, sensor2: in std_logic;
 	Va, Vn: out std_logic
 );
@@ -26,6 +26,7 @@ signal clock20: std_logic;
 signal clock30: std_logic;
 signal clock3: std_logic;
 signal tc: std_logic;
+signal A, B, C: std_logic;
 
 component DivisorFrequencia is 
 port (
@@ -45,6 +46,10 @@ port (
 	);
 end component;
 begin
+
+A <= (not i1) and (not i2);
+B<= (not i1) and i2;
+C <= i1 and (not i2);
 
 process (clock1, clock10, clock20, clock3, clock30, gaux, raux, yaux, clk)
 
