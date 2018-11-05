@@ -5,9 +5,9 @@ entity Semaforo is
 
 port(
 	clk: in std_logic;
-	r : out std_logic_vector (1 downto 0); 
-	g : out std_logic_vector (1 downto 0);
-	y : out std_logic_vector (1 downto 0);
+	r : buffer std_logic_vector (1 downto 0); 
+	g : buffer std_logic_vector (1 downto 0);
+	y : buffer std_logic_vector (1 downto 0);
 	A, B, C: in std_logic;
 	sensor1, sensor2: in std_logic;
 	Va, Vn: out std_logic
@@ -59,14 +59,14 @@ end process;
 
 divFreq: DivisorFrequencia port map (clk, clock20, clock10, clock30,clock3,clock1);
 
-r(0) <= raux(0);
-r(1) <= (gaux(0) or yaux(0)) and (not C);
-
 g(0) <= gaux(0);
-g(1)<= (not gaux(0)) and (not C);
+g(1) <= (not gaux(0)) and (not C); 
+
+r(0) <= raux(0);
+r(1) <= ((gaux(0) or yaux(0)) and (not g(1))) and (not C);
 
 y(0) <= yaux(0);
-y(1) <= ((raux(0))and (A or B) and (not yaux(0))) or (yaux(0) and C);
+y(1) <= (gaux(0) and (not yaux(0))) or (yaux(0) and C);
 
 controladorSensor: sensor port map (clk,sensor1, sensor2, tc);
 Va <= tc;
